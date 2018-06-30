@@ -40,9 +40,18 @@ performance is very promising!
 
 ![selected blocksizes compared to proof of concept formats](./images/barchart2.png)
 
+in `stream` the boundries of the records are parsed, but contents not examined.
+in `binary` some fields are processed. This time represents a query for replies to a given thread,
+messages where `value.content.root == '%HPMQEUbULKcJJMEAP/iMnVfuykNZ9llEymArjkuEO/A=.sha256'`
+
+Also note, `stream` and `binary` process the main log converted into in-place binary format,
+and the file is a bit smaller, 300 mb, instead of 343 mb.
+
+
 ## License
 
 MIT
+
 
 
 
