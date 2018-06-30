@@ -12,11 +12,13 @@ with various methods, varying blocksize. (and applying various levels of parsing
 * `log`: read every record via `flumelog-offset`, but do not parse into json.
 * `json`: same as `log`, except parse into json.
 
+The Y-axis is in milliseconds, time to read 343 mb file.
+
 ## results
 
 ![read time as block size increases](./images/linegraph.png)
 
-we see here that for all layers, blocksize has a significant effect on performance.
+We see here that for all layers, blocksize has a significant effect on performance.
 although the effect has diminishing returns. 64kb seems like a good default.
 
 ![read time at 16, 32, and 64 kb blocks](./images/barchart.png)
@@ -36,7 +38,7 @@ or path followed into the data without processing the entire record)
 This is just at the proof of stage, but compared to the current implementation,
 performance is very promising!
 
-![selected blocksizes compared to proof of concept formats](./images/barchart.png)
+![selected blocksizes compared to proof of concept formats](./images/barchart2.png)
 
 ## License
 
