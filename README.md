@@ -12,7 +12,7 @@ with various methods, varying blocksize. (and applying various levels of parsing
 * `log`: read every record via `flumelog-offset`, but do not parse into json.
 * `json`: same as `log`, except parse into json.
 
-The Y-axis is in milliseconds, time to read 343 mb file.
+The Y-axis is in milliseconds, time to read 343 mb file, lower is better.
 
 ## results
 
